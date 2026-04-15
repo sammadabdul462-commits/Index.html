@@ -131,8 +131,7 @@ nameInput.oninput = () => {
 submitName.onclick = () => {
   playSound(clickSound);
   let name = nameInput.value;
-  document.getElementById("step2").style.display = "none";
-  document.getElementById("videoSection").classList.remove("hidden");
+  
 
   typeText(
     document.getElementById("finalText"),
@@ -144,7 +143,7 @@ submitName.onclick = () => {
   // Show uploaded video (keep file in same folder as HTML)
   document.getElementById("videoSection").innerHTML += `
     <video width="100%" controls autoplay>
-      <source src="video.mp4" type="video/mp4">
+      <source src="https://youtube.com/shorts/l7eaYRFjHQ4?si=dUKviih1eSNxQjwy" type="video/mp4">
     </video>
   `;
 };
